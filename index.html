@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maheen's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      /*======================================
+      //--//-->   ABOUT
+      ======================================*/
+
+      body {
+        background-color: #606c38; /* Replace with your desired color */
+        color: #ffffff; /* Ensure text color contrasts with the background */
+      }
+
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
+
+      .skill-mf .progress {
+        background-color: #dee2e6;
+        margin: 0.5rem 0 1.2rem 0;
+        border-radius: 0;
+        height: 0.7rem;
+      }
+
+      .skill-mf .progress .progress-bar {
+        height: 0.7rem;
+        background-color: #808000;
+      }
+
+      /* Animation styles */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      #typing-animation:before {
+        content: "";
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+        to {
+          width: 0;
+        }
+      }
+
+      /* project image zoom effect */
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Maheen Sadaf</a>
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link"><span>Resume</span></a>
+            </li>
+            <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link"
+                ><span>Contact</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#blog-section" class="nav-link"><span>Blogs</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div
+              class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+              data-scrollax-parent="true"
+            >
+              <div class="one-third js-fullheight order-md-last img">
+                <img
+                  src="bgpic.png"
+                  alt="Example Image"
+                  style="width: 500px; height: 500px; float: left"
+                />
+                <div class="overlay"></div>
+              </div>
+
+              <div
+                class="one-forth d-flex align-items-center ftco-animate"
+                data-scrollax=" properties: { translateY: '70%' }"
+              >
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Maheen Sadaf</span></h1>
+
+                  <!-- Element to contain animated typing -->
+                  <span id="typing-animation"></span>
+
+                  <script>
+                    // Initialize the typing animation
+                    const typingAnimationElement =
+                      document.getElementById("typing-animation");
+
+                    // Create an array of typing text
+                    const typingTexts = [
+                      "AI Engineer",
+                      "ML Enthusiast   ",
+                      "YouTube Script Writer  ",
+                      "YouTube Channel Manager",
+                    ];
+
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                      // Loop through each character and add it to the element
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 200); // Increase the delay to slow down the typing animation
+                      }
+
+                      // Once the animation is complete, reset the text and start over
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = "";
+                        playTypingAnimation(
+                          typingTexts[
+                            (typingTexts.indexOf(text) + 1) % typingTexts.length
+                          ]
+                        );
+                      }, text.length * 200);
+                    }
+
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                  </script>
+
+                  <br />
+                  <br />
+                  <h2>A Junior CV Analyst</h2>
+                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                  <!-- <br> -->
+                  <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <!-- <div class="row d-flex"> -->
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img
+                          src="Mypicture.png"
+                          class="img-fluid rounded b-shadow-a"
+                          alt
+                        />
+                      </div>
+                    </div>
+                    <!-- Details next to profile image -->
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p>
+                          <span class="title-s">Name: </span>
+                          <span>Maheen Sadaf</span>
+                        </p>
+                        <p>
+                          <span class="title-s">Job Role: </span>
+                          <span>AI Engineer</span>
+                        </p>
+                        <p>
+                          <span class="title-s">Interests: </span>
+                          <span>ML,DL,CV,NLP</span>
+                        </p>
+                        <p>
+                          <span class="title-s">Address: </span>
+                          <span>Khewra, Jhelum</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>Machine Learning</span>
+                    <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+
+                    <span>PYTHON</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 85%"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+
+                    <span>Data Visualization</span>
+                    <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 85%"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+
+                    <span>computer vision</span>
+                    <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+
+                    <span>script writing</span>
+                    <span class="pull-right">95%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 95%"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+
+                  <p>
+                    Currently,I am doing a Bachelor's degree in Artificial
+                    Intelligence and have developed expertise in machine
+                    learning, deep learning, natural language processing, and
+                    computer vision. I am proficient in managing and creating
+                    content for a YouTube channel. I am committed to continuous
+                    learning and actively pursue opportunities to expand my
+                    understanding of new technologies and cultures through
+                    reading and travel.
+                  </p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex">
+                      <span>Profile:</span> <span>AI Engineer</span>
+                    </li>
+                    <li class="d-flex">
+                      <span>Domain:</span>
+                      <span>ML, DL, NLP,CV &amp; YouTube </span>
+                    </li>
+                    <li class="d-flex">
+                      <span>Education:</span>
+                      <span>Bachelor of Artificial Intelligence</span>
+                    </li>
+                    <li class="d-flex">
+                      <span>Language:</span>
+                      <span>English, Urdu, basic German</span>
+                    </li>
+                    <!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+                    <!-- <li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
+                    <li class="d-flex">
+                      <span>Interest:</span>
+                      <span>Reading, Traveling, exploring</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="text">
+                  <p class="mb-4">
+                    <span class="number" data-number="10">0</span>
+                    <span>+</span>
+                    <span>&nbsp; Projects completed</span>
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/maheen-sadaf-063171281/?trk=opento_sprofile_topcard"
+                      class="btn btn-primary py-3 px-3"
+                      target="_blank"
+                      >LinkedIn</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>
+              Experienced Content Writer and Manager skilled in content strategy
+              and SEO, with a strong background in YouTube script writing.
+              Pursuing a BS in AI, with project experience in computer vision
+              and IoT-based systems for agriculture and computer vision based
+              nutrition analysis.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2021-Present</span>
+              <h2>BS Artificial Intelligence</h2>
+              <span class="position">UMT,Lahore</span>
+              <p class="mt-4">
+                Pursuing a degree in Artificial Intelligence, with a CGPA of
+                3.72 and Dean's Merit for maintaining an SGPA above 3.8.
+              </p>
+              <ul>
+                <li>
+                  Developed projects such as a Plant Disease Detection app, a
+                  Food Detection and Nutrient Analysis app, and a Greenhouse
+                  Monitoring System utilizing IoT devices.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2022-present</span>
+              <h2>YouTube Content Writer & Manager</h2>
+
+              <span class="position">Variety of channels</span>
+              <p class="mt-4">
+                Managed content creation and channel operations to enhance
+                audience engagement.
+              </p>
+              <ul>
+                <li>
+                  Created engaging, well-researched scripts; optimized video
+                  titles, descriptions, and tags for SEO; scheduled content
+                  strategically to maximize reach.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2017-2019</span>
+              <h2>Secondary School</h2>
+              <span class="position"
+                >Meraj Hassan School, Khewra salt mines</span
+              >
+              <p class="mt-4">Matric in Sciences by securing 1028 marks</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2019-2021</span>
+              <h2>Higher Secondary School</h2>
+              <span class="position"
+                >PMDC Degree COllege ,Khewra salt mines</span
+              >
+              <p class="mt-4">FSC in Pre-medical by securing 1066 marks</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p>
+              <a
+                href="https://drive.google.com/drive/folders/1BNejAfKqOigljRw06OVliDxB2mtj2_bi"
+                class="btn btn-primary py-4 px-5"
+                target="_blank"
+                >Download CV</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="blog-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Blogs</h1>
+            <h2 class="mb-4">My Blogs</h2>
+            <p>
+              Explore my latest blogs where I share insights, experiences, and
+              solutions to various challenges.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex ftco-animate">
+            <!-- Blog 1 -->
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/from-data-to-decisions-how-machine-learning-models-actually-learn-1dcda8b9ea60"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog1.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/from-data-to-decisions-how-machine-learning-models-actually-learn-1dcda8b9ea60"
+                    target="_blank"
+                    ><b>How Machine Learning Models Actually Learn</b></a
+                  >
+                </h3>
+                <p>
+                  A beginner-friendly guide on how machine learning models learn
+                  from data to make intelligent decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 2 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/convolutional-neural-networks-the-technology-behind-image-recognition-164e982ffa9f"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog5.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/convolutional-neural-networks-the-technology-behind-image-recognition-164e982ffa9f"
+                    target="_blank"
+                    ><b>The Technology Behind Image Recognition</b></a
+                  >
+                </h3>
+                <p>
+                  An easy-to-understand overview of how CNNs process images to
+                  recognize patterns and make accurate predictions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 3 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/understanding-transformers-the-architecture-revolutionizing-ai-6580636f2922"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog6.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/understanding-transformers-the-architecture-revolutionizing-ai-6580636f2922"
+                    target="_blank"
+                    ><b>The Hidden Challenge of Artificial Intelligence</b></a
+                  >
+                </h3>
+                <p>
+                  An overview of Transformer architecture to transform AI
+                  applications like language translation and content generation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Blog 4-->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/understanding-bias-and-fairness-in-ai-systems-the-hidden-challenge-of-artificial-intelligence-904347925f1d"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog2.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/understanding-bias-and-fairness-in-ai-systems-the-hidden-challenge-of-artificial-intelligence-904347925f1d"
+                    target="_blank"
+                    ><b>The Hidden Challenge of Artificial Intelligence</b></a
+                  >
+                </h3>
+                <p>
+                  Exploring the hidden challenge of AI bias and fairness, and
+                  its real-world implications on decision-making systems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 5 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/anomaly-detection-finding-needles-in-digital-haystacks-6a2ed6f14d3c"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog4.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/anomaly-detection-finding-needles-in-digital-haystacks-6a2ed6f14d3c"
+                    target="_blank"
+                    ><b>Finding Needles in Digital Haystacks</b></a
+                  >
+                </h3>
+                <p>
+                  Exploring anomaly detection techniques to identify outliers
+                  and quality control across various industries.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 6 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/the-evolution-of-ai-from-rule-based-systems-to-deep-learning-aee65bfc6fbc"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog3.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/the-evolution-of-ai-from-rule-based-systems-to-deep-learning-aee65bfc6fbc"
+                    target="_blank"
+                    ><b>From Rule-Based Systems to Deep Learning</b></a
+                  >
+                </h3>
+                <p>
+                  Tracing the evolution of AI, from early rule-based systems to
+                  modern deep learning advancements and their future potential.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 7 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/association-rule-learning-discovering-hidden-patterns-in-big-data-7c7f08586ff6"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog7.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/association-rule-learning-discovering-hidden-patterns-in-big-data-7c7f08586ff6"
+                    target="_blank"
+                    ><b>Association Rule Learning</b></a
+                  >
+                </h3>
+                <p>
+                  A simple guide to how Association Rule Learning finds hidden
+                  patterns in data to improve recommendations, sales, and
+                  predictions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 8 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/sequential-pattern-mining-finding-hidden-sequences-c2063ede665b"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog8.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/sequential-pattern-mining-finding-hidden-sequences-c2063ede665b"
+                    target="_blank"
+                    ><b>Sequential Pattern Mining</b></a
+                  >
+                </h3>
+                <p>
+                  Sequential Pattern Mining identifies recurring patterns in
+                  data sequences to predict future events, enhancing
+                  applications like recommendations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 9-->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/large-language-models-behind-the-chatbot-revolution-11e935d92ac2"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog9.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/large-language-models-behind-the-chatbot-revolution-11e935d92ac2"
+                    target="_blank"
+                    ><b>Large Language Models</b></a
+                  >
+                </h3>
+                <p>
+                  LLMs are AI systems trained on vast text data, enabling
+                  natural language understanding and powering chatbots, with
+                  applications in many.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Blog 10 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/object-detection-in-real-time-technologies-and-challenges-d6ed15817ccc "
+                class="block-20 zoom-effect"
+                style="background-image: url('blog10.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/object-detection-in-real-time-technologies-and-challenges-d6ed15817ccc"
+                    target="_blank"
+                    ><b>Object Detection in Real-time</b></a
+                  >
+                </h3>
+                <p>
+                  An overview of how real-time object detection enables machines
+                  to instantly identify and track objects
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 11 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/medical-image-analysis-how-ai-is-transforming-healthcare-diagnostics-173d8077f503"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog11.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/medical-image-analysis-how-ai-is-transforming-healthcare-diagnostics-173d8077f503"
+                    target="_blank"
+                    ><b>Medical Image Analysis</b></a
+                  >
+                </h3>
+                <p>
+                  An exploration of how AI-powered medical image analysis is
+                  revolutionizing healthcare diagnostics
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 12 -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/3d-computer-vision-understanding-depth-perception-in-machines-21fec6785b6f"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog13.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/3d-computer-vision-understanding-depth-perception-in-machines-21fec6785b6f"
+                    target="_blank"
+                    ><b>3D Computer Vision</b></a
+                  >
+                </h3>
+                <p>
+                  A concise guide to how 3D computer vision enables machines to
+                  perceive depth, powering innovations in robotics
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 13-->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/smart-cities-iot-infrastructure-and-urban-planning-8fe9a709fe8f"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog14.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/smart-cities-iot-infrastructure-and-urban-planning-8fe9a709fe8f"
+                    target="_blank"
+                    ><b>Smart Cities Development</b></a
+                  >
+                </h3>
+                <p>
+                  An in-depth guide to the IoT infrastructure and technical
+                  foundations driving the sustainable development of modern
+                  smart cities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 14-->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/the-rise-of-smart-agriculture-how-iot-is-revolutionizing-farming-b0528d9b992a"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog12.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/the-rise-of-smart-agriculture-how-iot-is-revolutionizing-farming-b0528d9b992a"
+                    target="_blank"
+                    ><b>The Rise of Smart Agriculture</b></a
+                  >
+                </h3>
+                <p>
+                  An insightful overview of how IoT is revolutionizing
+                  agriculture through precision farming and sustainable
+                  practices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 15-->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/edge-computing-in-iot-processing-data-where-its-created-80062d421b72"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog15.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/edge-computing-in-iot-processing-data-where-its-created-80062d421b72"
+                    target="_blank"
+                    ><b>Edge Computing in IoT</b></a
+                  >
+                </h3>
+                <p>
+                  A comprehensive exploration of edge computing in IoT, focusing
+                  on its architecture, and impact on real-time data processing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 16-->
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/social-robots-how-robots-are-learning-to-understand-human-emotions-3dd852d55162"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog17.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/social-robots-how-robots-are-learning-to-understand-human-emotions-3dd852d55162"
+                    target="_blank"
+                    ><b>Social Robots</b></a
+                  >
+                </h3>
+                <p>
+                  Exploring how AI-powered social robots understand and respond
+                  to human emotions across various applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 17-->
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/robot-navigation-how-machines-find-their-way-7e5b21154f5f"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog16.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/robot-navigation-how-machines-find-their-way-7e5b21154f5f"
+                    target="_blank"
+                    ><b>Robot Navigation</b></a
+                  >
+                </h3>
+                <p>
+                  An insightful guide to the core technologies and strategies
+                  enabling intelligent robot navigation in dynamic environments.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 18-->
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/underwater-robots-exploring-the-oceans-deepest-secrets-0a83bb37c1d8"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog18.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/underwater-robots-exploring-the-oceans-deepest-secrets-0a83bb37c1d8"
+                    target="_blank"
+                    ><b>Underwater Robots</b></a
+                  >
+                </h3>
+                <p>
+                  Explorig how Underwater robots uncover ocean secrets and drive
+                  marine research with advanced technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Blog 19-->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/federated-learning-privacy-preserving-ai-the-future-of-secure-machine-learning-5d00d70da7c6"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog19.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/federated-learning-privacy-preserving-ai-the-future-of-secure-machine-learning-5d00d70da7c6"
+                    target="_blank"
+                    ><b>Federated Learning</b></a
+                  >
+                </h3>
+                <p>
+                  Discovering how federated learning enables secure,
+                  privacy-preserving AI training across decentralized devices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 20-->
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/machine-translation-breaking-down-language-barriers-through-neural-networks-95bb73123621"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog20.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/machine-translation-breaking-down-language-barriers-through-neural-networks-95bb73123621"
+                    target="_blank"
+                    ><b>Machine Translation</b></a
+                  >
+                </h3>
+                <p>
+                  Understanding how neural networks and transformers improve
+                  machine translation and break language barriers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 21-->
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/transfer-learning-how-ai-models-build-on-previous-knowledge-d5c37daa89bd"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog21.webp')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/transfer-learning-how-ai-models-build-on-previous-knowledge-d5c37daa89bd"
+                    target="_blank"
+                    ><b>Transfer Learning</b></a
+                  >
+                </h3>
+                <p>
+                  Analyzing how machine learning detects emotions in text,
+                  enhancing customer service and content recommendations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 50px">
+          <!-- Blog 22-->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/sentiment-analysis-teaching-machines-to-understand-emotions-4c1accce9d65"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog22.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/sentiment-analysis-teaching-machines-to-understand-emotions-4c1accce9d65"
+                    target="_blank"
+                    ><b>Sentiment Analysis</b></a
+                  >
+                </h3>
+                <p>
+                  Understanding how AI enhances climate change predictions and
+                  mitigation through advanced machine learning.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 23-->
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/quantum-machine-learning-the-next-computing-frontier-56aa26acb063"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog23.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/quantum-machine-learning-the-next-computing-frontier-56aa26acb063"
+                    target="_blank"
+                    ><b>Quantum Machine Learning</b></a
+                  >
+                </h3>
+                <p>
+                  Exploring how quantum machine learning combines quantum
+                  computing and AI to solve complex problems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 24-->
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://medium.com/@f2021376104/ai-in-climate-change-predicting-and-mitigating-environmental-impact-a-technical-deep-dive-f60f025ecc7b"
+                class="block-20 zoom-effect"
+                style="background-image: url('blog24.png')"
+                target="_blank"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://medium.com/@f2021376104/ai-in-climate-change-predicting-and-mitigating-environmental-impact-a-technical-deep-dive-f60f025ecc7b"
+                    target="_blank"
+                    ><b>AI in Climate Change</b></a
+                  >
+                </h3>
+                <p>
+                  Analyzing how machine learning identifies emotions in text,
+                  transforming customer service and market research.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="ftco-section img margin-top"
+        style="background-image: url(blog_pic_bg.jpg)"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2>More Blogs on <span>Medium</span></h2>
+              <h4>
+                I uncover fascinating tech facts and innovations across various
+                domains.
+              </h4>
+              <br />
+			  <p>
+              <a
+                href="https://medium.com/@f2021376104"
+                class="btn btn-primary py-4 px-5"
+                target="_blank"
+                style="margin-top: 20px"
+                >Medium</a
+              >
+			  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="ftco-section contact-section ftco-no-pb"
+      id="contact-section"
+    >
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Khewra Jhelum, Pakistan</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel://0101010101">+923405899982</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p>
+                <a href="mailto:info@yoursite.com">maheensadaf535@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | This template is made with
+              <i class="icon-heart color-danger" aria-hidden="true"></i> by
+              <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
